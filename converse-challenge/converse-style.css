@@ -22,6 +22,7 @@ p{
   width: 825px;
   margin: 50px auto;
   /* margin-top: 40px; */
+  position: relative;
 }
 
 .product-title{
@@ -55,6 +56,8 @@ p{
 .more-info:link,
 .more-info:visited{
   color: #000;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .more-info:hover,
@@ -66,7 +69,7 @@ p{
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 30px; 
+  margin-top: 15px; 
   margin-bottom: 15px;
 }
 
@@ -100,3 +103,90 @@ ul:last-child{
   background-color: #fff;
   color: #000;
 }
+
+.sale{
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  background-color: #f00;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  letter-spacing: 2px;
+}
+
+.color{
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;/
+  margin-right: 10px;
+}
+
+.color:last-child{
+  margin-right: 0;
+}
+
+.black{
+  background-color: #000;
+}
+
+.color-blue{
+  background-color: #0000ff;
+}
+
+.color-red{
+  background-color: #f00;
+}
+
+.color-yellow{
+  background-color: #ffd700;
+}
+
+.color-green{
+  background-color: #00ff00;
+}
+
+.color-brown{
+  background-color: #964b00;
+}
+
+/* .color-options div{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.color-options div:last-child{
+  margin-right: 0;
+} */
+
+
+/* .color-options div:nth-child(1){
+  background-color: #000;
+}
+
+.color-options div:nth-child(2){
+  background-color: #0000ff;
+}
+
+.color-options div:nth-child(3){
+  background-color: #ff0000;
+}
+
+.color-options div:nth-child(4){
+  background-color: #ffd700;
+}
+
+.color-options div:nth-child(5){
+  background-color: #00ff00;
+}
+
+.color-options div:nth-child(6){
+  background-color: #964b00;
+} */

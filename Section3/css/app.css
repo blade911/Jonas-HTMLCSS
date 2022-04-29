@@ -175,11 +175,7 @@ a:visited {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-a:hover,                                                           
-=======
 a:hover,
->>>>>>> 0c6382397163f5fba3895fd0e8a43ffd8098e7c0
 a:active {
   color: #444;
 }
@@ -194,8 +190,6 @@ nav a:link{
   margin: 20px;
   padding: 20px;
   display: block; */
-<<<<<<< HEAD
-=======
 
   margin-right: 30px;
   margin-top: 10px;
@@ -246,5 +240,4 @@ h2::after{
    right: -25px;
    top: -10px;
    /* margin-left: 20px; */
->>>>>>> 0c6382397163f5fba3895fd0e8a43ffd8098e7c0
 }
