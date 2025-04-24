@@ -42,8 +42,10 @@
       margin: 100px auto;
       background-color: #087f5b;
       border-radius: 8px;
-      padding: 32px;
+      padding: 32px  48px 32px 86px;
+      /* padding: 32px;
       padding-left: 86px;
+      padding-right: 48px; */
       position: relative;
       
 
@@ -81,26 +83,31 @@
     .btn{
       background-color: #fff;
       border: none;
-      height: 36px;
-      width: 35px;
+      height: 40px;
+      width: 40px;
       position: absolute;
       border-radius: 50%;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      top: 50%;
+      
 
-      box-shadow: 0 0 16px rgba(1, 1, 1, 0.4);
-
+      box-shadow: 0 12px 24px rgba(1, 1, 1, 0.2);
+      cursor: pointer;
     }
 
     .btn--left{
+      /* In relation to PARENT ELEMENT */
+      top: 50%;
       left: 0;
+
+      /* In relation to ELEMENT ITSELF */
       transform: translate(-50%, -50%);
-      
     }
 
     .btn--right{
+      top: 50%;
       right:0;
       transform: translate(50%, -50%);
     }
@@ -111,6 +118,30 @@
       fill: #087f5b;
     }
 
+    .dots{
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      
+      transform: translate(-50%, 32px);
+
+      display: flex;
+      gap: 12px;
+    }
+
+    .dot{
+      height: 12px;
+      width: 12px;
+      background-color: #fff;
+      border: 2px solid #087f5b;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .dot--filled{
+      background-color: #087f5b;
+    }
+    
     
   </style>
 </head>
@@ -119,7 +150,7 @@
   <div class="carousel">
     <img src="maria.jpg" alt="Maria de Almeida">
     <blockquote class="testimonial">
-      <p class="testimonial-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, nam deleniti libero nesciunt optio commodi id ut ipsa velit sed maiores quaerat qui asperiores esse est perspiciatis nisi numquam sit?"</p>
+      <p class="testimonial-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, nam deleniti libero nesciunt optio commodi id ut ipsa velit sed maiores quaerat qui asperiores esse est"</p>
       <p class="testimonial-author">Maria de Almeida</p>
       <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
     </blockquote>
@@ -133,6 +164,12 @@
         <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
       </svg>
     </button>
+    <div class="dots">
+      <button class="dot dot--filled">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+    </div>
   </div>
 </body>
 </html>
