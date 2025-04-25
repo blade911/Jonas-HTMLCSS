@@ -35,103 +35,88 @@
       font-family: 'Inter',sans-serif;
       color: #343a40;
       line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     } 
 
     .pagination{
-      width: 800px;
-      margin: 100px auto;
-
       display: flex;
-      justify-content: center;
       align-items: center;
-      font-size: 16px;
-    }
-
-    .page-numbers{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-    }
-
-    a:link{
-      text-decoration: none;
-      color: #343a40;
-      font-weight: 500;
-      padding: 12px;
-    }
-
-    a:hover{
-      background-color: #087f5b;
-      border-radius: 50%;
-      padding: 12px;
-    }
-
-    a.highlight{
-      background-color: #087f5b;
-      border-radius: 50%;
-      color: #fff;
+      gap: 12px;
+      margin-top: 200px;
     }
 
     .btn{
-      width: 40px;
-      height: 40px;
-      border: none;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #fff;
+      height: 48px;
+      width: 48px;
       border: 1px solid #087f5b;
+      background: none;
+      border-radius: 50%;
       cursor: pointer;
     }
 
-    .btn--left{
-      margin-right: 32px;
-    }
-
-    .btn--right{
-      margin-left: 32px;
-    }
-
-    .btn--left:hover{
+    .btn:hover{
       background-color: #087f5b;
-      fill: #fff;
     }
-
-    .btn--right:hover{
-            background-color: #087f5b;
-    }
-
 
     .btn-icon{
-      height: 16px;
-      width: 16px;
+      height:24px;
+      width: 24px;
       fill: #087f5b;
     }
 
-    .
+    .btn:hover .btn-icon{
+      fill: #fff;
+    }
+
+    .page-links:link, 
+    .page-links:visited{
+      font-size: 18px;
+      text-decoration: none;
+      color: #343a40;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      
+      height: 36px;
+      width: 36px;
+    }
+
+    .page-links:hover,
+    .page-links:active,
+    .page-links.page-links--active{
+      background-color: #087f5b;
+      color: #fff;
+    }
+    .page-links.page-links--active{
+      cursor: default;
+    }
+
+    .dots{
+      color: #868e96;
+    }
   </style>
 </head>
 
 <body>
   <div class="pagination">
-    <button class="btn btn--left">
+    <button class="btn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="btn-icon">
         <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
       </svg>
     </button>
-    <div class="page-numbers">
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#" class="highlight">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <p>...</p>
-      <a href="#">23</a>
-    </div>
-    <button class="btn btn--right">
+    <a href="#" class="page-links">1</a>
+    <a href="#" class="page-links">2</a>
+    <a href="#" class="page-links page-links--active">3</a>
+    <a href="#" class="page-links">4</a>
+    <a href="#" class="page-links">5</a>
+    <a href="#" class="page-links">6</a>
+    <span class="dots">...</span>
+    <a href="#" class="page-links">23</a>
+    <button class="btn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="btn-icon">
         <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
       </svg>
