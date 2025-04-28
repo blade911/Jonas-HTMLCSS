@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html{
+      font-family: 'rubik', sans-serif;
+    }
+    header{
+      height: 100vh;
+      position: relative;
+      background-image: linear-gradient(rgba(36,36,36,.6), rgba(36,36,36,.6)), url(hero.jpg);
+      background-size: cover;
+      color: #fff;
+    }
+    h1{
+      font-size: 52px;
+      line-height: 1.05;
+      margin-bottom: 32px;
+    }
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .header-container{
+      width: 1200px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .header-container-inner{
+      width: 50%;
+    }
+    nav{
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 700;
+      padding-top: 32px;
+
+      display: flex;
+      justify-content: space-between;
+    }
+    p{
+      margin-bottom: 48px;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    .btn:link, .btn:visited{
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #e67e22;
+      padding: 16px 32px;
+      border-radius: 9px;
+      font-size: 20px;
+      font-weight: 600;
+      /* margin-top: 48px; */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div>LOGO</div>
+      <div>navigation</div>
+    </nav>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healthy meal delivered to your door, every single day</h1>
+          <p>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
+      </div>
+  </header>
+  <section>
+    <div class="container">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum cum ut, nesciunt accusamus provident nihil dolor qui, rem maxime blanditiis aliquid corporis iure eaque quo dolore numquam. Illum, nemo corrupti?</p>
+    </div>
+  </section>
+</body>
+</html>
