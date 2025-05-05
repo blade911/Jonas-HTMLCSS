@@ -289,27 +289,6 @@ font-weight: 600;
   font-size: 1.8rem;
 }
 
-.list{
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item{
-  display: flex;
-  gap: 1.6rem;
-  align-items: center;
-  font-size: 1.8rem; 
-}
-
-.list-icon{
-  height: 3rem;
-  width: 3rem;
-  color: #e67e22;
-  font-size: 1.8rem;
-}
-
 /*********************************/
 /* Testimonials Section */
 /*********************************/ 
@@ -341,7 +320,7 @@ font-weight: 600;
 
 .testimonial-name{
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f;
 }
 
 .gallery{
@@ -351,7 +330,23 @@ font-weight: 600;
   padding: 1.6rem;
 }
 
+.gallery-item{
+  overflow: hidden;
+}
+
 .gallery-item img{
   display: block;
   width: 100%;
+  transition: all .4s;
+}
+
+.gallery-item img:hover{
+  transform: scale(1.1);
+}
+
+/*********************************/
+/* Pricing Section */
+/*********************************/ 
+.section-pricing{
+  padding: 9.6rem;
 }
